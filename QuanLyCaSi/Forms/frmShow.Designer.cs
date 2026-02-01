@@ -30,29 +30,32 @@
         {
             groupBox1 = new GroupBox();
             dataGridView1 = new DataGridView();
-            textBox2 = new TextBox();
-            label2 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            textBox1 = new TextBox();
+            lBH = new TextBox();
+            BH = new Label();
+            dtpNgDien = new DateTimePicker();
             label4 = new Label();
-            label1 = new Label();
-            button7 = new Button();
-            button6 = new Button();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            txtMaShow = new TextBox();
+            this.Ma = new Label();
+            txtTenShow = new TextBox();
+            Ten = new Label();
+            groupBox2 = new GroupBox();
+            btnThem = new Button();
+            btnXoa = new Button();
+            btnSua = new Button();
+            btnLuu = new Button();
+            btnHuy = new Button();
+            btnThoat = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
             groupBox1.Controls.Add(dataGridView1);
-            groupBox1.Location = new Point(57, 182);
+            groupBox1.Location = new Point(12, 189);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(696, 252);
+            groupBox1.Size = new Size(808, 252);
             groupBox1.TabIndex = 23;
             groupBox1.TabStop = false;
             groupBox1.Text = "Show";
@@ -63,164 +66,187 @@
             dataGridView1.Location = new Point(6, 26);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(684, 220);
+            dataGridView1.Size = new Size(796, 220);
             dataGridView1.TabIndex = 0;
             // 
-            // textBox2
+            // lBH
             // 
-            textBox2.Location = new Point(424, 55);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(238, 86);
-            textBox2.TabIndex = 36;
+            lBH.Location = new Point(432, 26);
+            lBH.Multiline = true;
+            lBH.Name = "lBH";
+            lBH.Size = new Size(340, 88);
+            lBH.TabIndex = 36;
             // 
-            // label2
+            // BH
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(363, 55);
-            label2.Name = "label2";
-            label2.Size = new Size(55, 20);
-            label2.TabIndex = 35;
-            label2.Text = "Bài hát";
+            BH.AutoSize = true;
+            BH.Location = new Point(371, 29);
+            BH.Name = "BH";
+            BH.Size = new Size(55, 20);
+            BH.TabIndex = 35;
+            BH.Text = "Bài hát";
             // 
-            // dateTimePicker1
+            // dtpNgDien
             // 
-            dateTimePicker1.Location = new Point(175, 88);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(159, 27);
-            dateTimePicker1.TabIndex = 34;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(158, 55);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 33;
+            dtpNgDien.Location = new Point(116, 93);
+            dtpNgDien.Name = "dtpNgDien";
+            dtpNgDien.Size = new Size(243, 27);
+            dtpNgDien.TabIndex = 34;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(75, 89);
+            label4.Location = new Point(20, 98);
             label4.Name = "label4";
             label4.Size = new Size(94, 20);
             label4.TabIndex = 32;
             label4.Text = "Ngày diễn ra";
             // 
-            // label1
+            // txtMaShow
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(77, 62);
-            label1.Name = "label1";
-            label1.Size = new Size(72, 20);
-            label1.TabIndex = 31;
-            label1.Text = "Tên Show";
+            txtMaShow.Location = new Point(102, 60);
+            txtMaShow.Name = "txtMaShow";
+            txtMaShow.Size = new Size(243, 27);
+            txtMaShow.TabIndex = 38;
             // 
-            // button7
+            // Ma
             // 
-            button7.Location = new Point(29, 19);
-            button7.Name = "button7";
-            button7.Size = new Size(94, 29);
-            button7.TabIndex = 30;
-            button7.Text = "Back";
-            button7.UseVisualStyleBackColor = true;
+            this.Ma.AutoSize = true;
+            this.Ma.Location = new Point(20, 63);
+            this.Ma.Name = "Ma";
+            this.Ma.Size = new Size(70, 20);
+            this.Ma.TabIndex = 37;
+            this.Ma.Text = "Mã Show";
             // 
-            // button6
+            // txtTenShow
             // 
-            button6.Location = new Point(589, 147);
-            button6.Name = "button6";
-            button6.Size = new Size(94, 29);
-            button6.TabIndex = 29;
-            button6.Text = "Thoát";
-            button6.UseVisualStyleBackColor = true;
+            txtTenShow.Location = new Point(102, 26);
+            txtTenShow.Name = "txtTenShow";
+            txtTenShow.Size = new Size(243, 27);
+            txtTenShow.TabIndex = 40;
             // 
-            // button5
+            // Ten
             // 
-            button5.Location = new Point(473, 147);
-            button5.Name = "button5";
-            button5.Size = new Size(94, 29);
-            button5.TabIndex = 28;
-            button5.Text = "Huỷ";
-            button5.UseVisualStyleBackColor = true;
+            Ten.AutoSize = true;
+            Ten.Location = new Point(20, 29);
+            Ten.Name = "Ten";
+            Ten.Size = new Size(72, 20);
+            Ten.TabIndex = 39;
+            Ten.Text = "Tên Show";
             // 
-            // button4
+            // groupBox2
             // 
-            button4.Location = new Point(363, 147);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 29);
-            button4.TabIndex = 27;
-            button4.Text = "Lưu";
-            button4.UseVisualStyleBackColor = true;
+            groupBox2.Controls.Add(btnThem);
+            groupBox2.Controls.Add(btnXoa);
+            groupBox2.Controls.Add(btnSua);
+            groupBox2.Controls.Add(btnLuu);
+            groupBox2.Controls.Add(btnHuy);
+            groupBox2.Controls.Add(btnThoat);
+            groupBox2.Controls.Add(txtMaShow);
+            groupBox2.Controls.Add(txtTenShow);
+            groupBox2.Controls.Add(this.Ma);
+            groupBox2.Controls.Add(BH);
+            groupBox2.Controls.Add(lBH);
+            groupBox2.Controls.Add(Ten);
+            groupBox2.Controls.Add(label4);
+            groupBox2.Controls.Add(dtpNgDien);
+            groupBox2.Location = new Point(12, 12);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(808, 177);
+            groupBox2.TabIndex = 41;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Thông tin Show";
             // 
-            // button3
+            // btnThem
             // 
-            button3.Location = new Point(263, 147);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 26;
-            button3.Text = "Sửa";
-            button3.UseVisualStyleBackColor = true;
+            btnThem.Location = new Point(34, 131);
+            btnThem.Name = "btnThem";
+            btnThem.Size = new Size(94, 29);
+            btnThem.TabIndex = 76;
+            btnThem.Text = "Thêm";
+            btnThem.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnXoa
             // 
-            button2.Location = new Point(163, 147);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 25;
-            button2.Text = "Xoá";
-            button2.UseVisualStyleBackColor = true;
+            btnXoa.Location = new Point(143, 131);
+            btnXoa.Name = "btnXoa";
+            btnXoa.Size = new Size(94, 29);
+            btnXoa.TabIndex = 77;
+            btnXoa.Text = "Xoá";
+            btnXoa.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnSua
             // 
-            button1.Location = new Point(63, 147);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 24;
-            button1.Text = "Thêm";
-            button1.UseVisualStyleBackColor = true;
+            btnSua.Location = new Point(252, 131);
+            btnSua.Name = "btnSua";
+            btnSua.Size = new Size(94, 29);
+            btnSua.TabIndex = 78;
+            btnSua.Text = "Sửa";
+            btnSua.UseVisualStyleBackColor = true;
+            // 
+            // btnLuu
+            // 
+            btnLuu.Location = new Point(361, 131);
+            btnLuu.Name = "btnLuu";
+            btnLuu.Size = new Size(94, 29);
+            btnLuu.TabIndex = 79;
+            btnLuu.Text = "Lưu";
+            btnLuu.UseVisualStyleBackColor = true;
+            // 
+            // btnHuy
+            // 
+            btnHuy.Location = new Point(471, 131);
+            btnHuy.Name = "btnHuy";
+            btnHuy.Size = new Size(94, 29);
+            btnHuy.TabIndex = 80;
+            btnHuy.Text = "Huỷ";
+            btnHuy.UseVisualStyleBackColor = true;
+            // 
+            // btnThoat
+            // 
+            btnThoat.Location = new Point(581, 131);
+            btnThoat.Name = "btnThoat";
+            btnThoat.Size = new Size(94, 29);
+            btnThoat.TabIndex = 81;
+            btnThoat.Text = "Thoát";
+            btnThoat.UseVisualStyleBackColor = true;
             // 
             // frmShow
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(782, 453);
+            ClientSize = new Size(832, 453);
             Controls.Add(groupBox1);
-            Controls.Add(textBox2);
-            Controls.Add(label2);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(textBox1);
-            Controls.Add(label4);
-            Controls.Add(label1);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(groupBox2);
             Name = "frmShow";
-            Text = "frmShow";
+            Text = "Show";
+            Load += this.frmShow_Load;
             groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private GroupBox groupBox1;
         private DataGridView dataGridView1;
-        private TextBox textBox2;
-        private Label label2;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox1;
+        private TextBox lBH;
+        private Label BH;
+        private DateTimePicker dtpNgDien;
         private Label label4;
-        private Label label1;
         private Button button7;
-        private Button button6;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private TextBox txtMaShow;
+        private Label label1;
+        private TextBox txtTenShow;
+        private Label Ten;
+        private GroupBox groupBox2;
+        private Button btnThem;
+        private Button btnXoa;
+        private Button btnSua;
+        private Button btnLuu;
+        private Button btnHuy;
+        private Button btnThoat;
     }
 }
