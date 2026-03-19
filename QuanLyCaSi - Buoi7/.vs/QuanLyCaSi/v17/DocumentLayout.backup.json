@@ -1,0 +1,194 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|c:\\users\\admin\\dth235698_nguyendominh_ltql_doan\\quanlycasi - buoi7\\quanlycasi\\forms\\frmtacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|solutionrelative:quanlycasi\\forms\\frmtacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|c:\\users\\admin\\dth235698_nguyendominh_ltql_doan\\quanlycasi - buoi7\\quanlycasi\\forms\\frmtacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|solutionrelative:quanlycasi\\forms\\frmtacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|c:\\users\\admin\\dth235698_nguyendominh_ltql_doan\\quanlycasi - buoi7\\quanlycasi\\forms\\frmtacgia.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|solutionrelative:quanlycasi\\forms\\frmtacgia.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|c:\\users\\admin\\dth235698_nguyendominh_ltql_doan\\quanlycasi - buoi7\\quanlycasi\\forms\\frmsingle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|solutionrelative:quanlycasi\\forms\\frmsingle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|c:\\users\\admin\\dth235698_nguyendominh_ltql_doan\\quanlycasi - buoi7\\quanlycasi\\forms\\frmsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|solutionrelative:quanlycasi\\forms\\frmsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|c:\\users\\admin\\dth235698_nguyendominh_ltql_doan\\quanlycasi - buoi7\\quanlycasi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|solutionrelative:quanlycasi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|c:\\users\\admin\\dth235698_nguyendominh_ltql_doan\\quanlycasi - buoi7\\quanlycasi\\forms\\frmsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|solutionrelative:quanlycasi\\forms\\frmsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Program.cs",
+              "RelativeDocumentMoniker": "QuanLyCaSi\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Program.cs",
+              "RelativeToolTip": "QuanLyCaSi\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T07:16:39.95Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmTacGia.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Forms\\frmTacGia.Designer.cs",
+              "RelativeDocumentMoniker": "QuanLyCaSi\\Forms\\frmTacGia.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Forms\\frmTacGia.Designer.cs",
+              "RelativeToolTip": "QuanLyCaSi\\Forms\\frmTacGia.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T06:32:38.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmSingle.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Forms\\frmSingle.cs",
+              "RelativeDocumentMoniker": "QuanLyCaSi\\Forms\\frmSingle.cs",
+              "ToolTip": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Forms\\frmSingle.cs [Design]",
+              "RelativeToolTip": "QuanLyCaSi\\Forms\\frmSingle.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T06:31:27.182Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmTacGia.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Forms\\frmTacGia.cs",
+              "RelativeDocumentMoniker": "QuanLyCaSi\\Forms\\frmTacGia.cs",
+              "ToolTip": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Forms\\frmTacGia.cs [Design]*",
+              "RelativeToolTip": "QuanLyCaSi\\Forms\\frmTacGia.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T06:29:52.252Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmTacGia.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Forms\\frmTacGia.cs",
+              "RelativeDocumentMoniker": "QuanLyCaSi\\Forms\\frmTacGia.cs",
+              "ToolTip": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Forms\\frmTacGia.cs*",
+              "RelativeToolTip": "QuanLyCaSi\\Forms\\frmTacGia.cs*",
+              "ViewState": "AgIAADoBAACIyczMzKw6wFcBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T06:14:10.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmSINGER.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Forms\\frmSINGER.cs",
+              "RelativeDocumentMoniker": "QuanLyCaSi\\Forms\\frmSINGER.cs",
+              "ToolTip": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Forms\\frmSINGER.cs [Design]",
+              "RelativeToolTip": "QuanLyCaSi\\Forms\\frmSINGER.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T15:34:24.884Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 132,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "4feb7be6-6355-423f-8c0e-d905b1ad0e99",
+        "Display": 0,
+        "X": 969,
+        "Y": 0,
+        "Width": 726,
+        "Height": 597,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmSINGER.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Forms\\frmSINGER.cs",
+              "RelativeDocumentMoniker": "QuanLyCaSi\\Forms\\frmSINGER.cs",
+              "ToolTip": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi7\\QuanLyCaSi\\Forms\\frmSINGER.cs",
+              "RelativeToolTip": "QuanLyCaSi\\Forms\\frmSINGER.cs",
+              "ViewState": "AgIAAFwAAAAADAAAAGAwwHQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T15:34:54.152Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

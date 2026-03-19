@@ -1,13 +1,6 @@
 ﻿create database QLCaSi
 go
 
-DELETE FROM CaSi;
-DELETE FROM TacGia;
-DELETE FROM Show;
-DELETE FROM BaiHat;
-DELETE FROM Album;
-
-
 use QLCaSi
 
 create table TaiKhoan(
@@ -50,16 +43,18 @@ create table CaSi(
 		constraint chk_sdt_CS check (sdt like '0[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
 	DChi nvarchar(200),
 	Catxe int not null,
+	TenTG nvarchar(100) not null
 );
 
-INSERT INTO CaSi (MaCS, TenCS, GTinh, Ngsinh, SDT, DChi, Catxe)
-VALUES
+INSERT INTO CaSi (MaCS, TenCS, GTinh, Ngsinh, SDT, DChi, Catxe) VALUES
 ('CS0001', N'Sơn Tùng M-TP', N'nam', '1994-07-05', '0912345678', N'Thái Bình', 50000000),
-('CS0002', N'Mỹ Tâm', N'nữ', '1981-01-16', '0987654321', N'Đà Nẵng', 70000000),
-('CS0003', N'Noo Phước Thịnh', N'nam', '1988-12-18', '0901122334', N'TP.HCM', 40000000),
-('CS0004', N'Hồ Ngọc Hà', N'nữ', '1984-11-25', '0933445566', N'Quảng Bình', 60000000),
-('CS0005', N'Đức Phúc', N'nam', '1996-10-15', '0977888999', N'Hà Nội', 30000000),
-('CS0006', N'Bích Phương', N'nữ', '1989-09-30', '0922334455', N'Quảng Ninh', 35000000);
+('CS0002', N'Mỹ Tâm', N'nữ', '1981-01-16', '0901234567', N'Đà Nẵng', 60000000),
+('CS0003', N'Đức Phúc', N'nam', '1996-10-15', '0934567890', N'Hà Nội', 30000000),
+('CS0004', N'Hòa Minzy', N'nữ', '1995-05-31', '0987654321', N'Bắc Ninh', 35000000),
+('CS0005', N'Noo Phước Thịnh', N'nam', '1988-12-18', '0971234567', N'TP Hồ Chí Minh', 45000000),
+('CS0006', N'Bích Phương', N'nữ', '1989-09-30', '0962345678', N'Quảng Ninh', 40000000),
+('CS0007', N'Erik', N'nam', '1997-10-13', '0945678901', N'Hà Nội', 32000000),
+('CS0008', N'Chi Pu', N'nữ', '1993-06-14', '0923456789', N'Hà Nội', 38000000);
 
 select * from casi
 
@@ -73,7 +68,7 @@ create table TacGia(
 	DChi nvarchar(200)
 );
 
-drop table TacGia
+select * from TacGia
 
 INSERT INTO TacGia (MaTG, TenTG, SDT, GTinh, NgSinh, DChi) VALUES
 ('TG0001', N'Nguyễn Văn An', '0912345678', N'nam', '1985-03-12', N'Hà Nội'),
@@ -112,8 +107,7 @@ create table Show(
 );
 
 
-------create table DoanhThu();
-select * from taikhoan
+
 
 
 
