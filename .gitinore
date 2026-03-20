@@ -52,3 +52,18 @@ Desktop.ini
 *.ldf
 appsettings.Development.json
 .vs
+
+# Visual Studio cache sâu hơn
+.vs/
+.vscode/
+
+# Database cache (rất quan trọng)
+*.db
+*.db-shm
+*.db-wal
+
+# Copilot cache
+CopilotIndices/
+
+# VS internal index
+*.vsidx
