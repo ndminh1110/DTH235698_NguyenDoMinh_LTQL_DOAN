@@ -2,6 +2,8 @@
 # Visual Studio
 # ===============================
 .vs/
+.vscode/
+.idea/
 *.suo
 *.user
 *.userosscache
@@ -19,17 +21,27 @@ x64/
 x86/
 
 # ===============================
-# Rider / VS Code
-# ===============================
-.idea/
-.vscode/
-
-# ===============================
 # NuGet
 # ===============================
 packages/
 *.nupkg
 *.snupkg
+
+# ===============================
+# Database & Local config
+# ===============================
+*.mdf
+*.ldf
+*.db
+*.db-shm
+*.db-wal
+appsettings.Development.json
+
+# ===============================
+# VS Internal cache & index
+# ===============================
+CopilotIndices/
+*.vsidx
 
 # ===============================
 # Logs & temp files
@@ -44,26 +56,3 @@ packages/
 Thumbs.db
 Desktop.ini
 .DS_Store
-
-# ===============================
-# Database / Local config
-# ===============================
-*.mdf
-*.ldf
-appsettings.Development.json
-.vs
-
-# Visual Studio cache sâu hơn
-.vs/
-.vscode/
-
-# Database cache (rất quan trọng)
-*.db
-*.db-shm
-*.db-wal
-
-# Copilot cache
-CopilotIndices/
-
-# VS internal index
-*.vsidx

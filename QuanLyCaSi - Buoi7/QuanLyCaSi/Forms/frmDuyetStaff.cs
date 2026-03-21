@@ -7,7 +7,10 @@ namespace QuanLyCaSi
 {
     public partial class frmDuyetStaff : Form
     {
-        string connStr = @"Data Source=.;Initial Catalog=QLCaSi;Integrated Security=True;TrustServerCertificate=True";
+        string connStr = @"Data Source=.;
+                           Initial Catalog=QLCaSi;
+                           Integrated Security=True;
+                           TrustServerCertificate=True";
 
         public frmDuyetStaff()
         {

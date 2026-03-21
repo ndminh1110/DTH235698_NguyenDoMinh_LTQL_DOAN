@@ -5,7 +5,6 @@ go
 
 use QLCaSi
 
--- ===================== TÀI KHOẢN =====================
 CREATE TABLE TaiKhoan(
     MaTK        varchar(6)    PRIMARY KEY,
     TenDangNhap nvarchar(100) NOT NULL,
@@ -21,7 +20,6 @@ CHECK (
     (VaiTro IN ('Admin','Guest'))
 );
 
--- ===================== TÁC GIẢ =====================
 CREATE TABLE TacGia(
     MaTG    varchar(6)    PRIMARY KEY CHECK(MaTG LIKE 'TG[0-9][0-9][0-9][0-9]'),
     TenTG   nvarchar(100) NOT NULL,
@@ -32,7 +30,6 @@ CREATE TABLE TacGia(
     DChi    nvarchar(200)
 );
 
--- ===================== CA SĨ =====================
 CREATE TABLE CaSi(
     MaCS    varchar(6)    PRIMARY KEY CHECK(MaCS LIKE 'CS[0-9][0-9][0-9][0-9]'),
     TenCS   nvarchar(100) NOT NULL,
@@ -45,7 +42,6 @@ CREATE TABLE CaSi(
     -- Đã xóa cột TenTG
 );
 
--- ===================== SINGLE (BÀI HÁT) =====================
 CREATE TABLE Single(
     MaBH        varchar(6)    PRIMARY KEY CHECK(MaBH LIKE 'BH[0-9][0-9][0-9][0-9]'),
     TenBH       nvarchar(100) NOT NULL,
@@ -55,7 +51,6 @@ CREATE TABLE Single(
     MaCSHT      varchar(6)    NULL FOREIGN KEY REFERENCES CaSi(MaCS)
 );
 
--- ===================== ALBUM =====================
 CREATE TABLE Album(
     MaAlbum    varchar(9)    PRIMARY KEY CHECK(MaAlbum LIKE 'Album[0-9][0-9][0-9][0-9]'),
     TenAlbum   nvarchar(200) NOT NULL,
@@ -63,14 +58,12 @@ CREATE TABLE Album(
     NgPhatHanh date
 );
 
--- Quan hệ N-N: Album <-> Single
 CREATE TABLE AlbumSingle(
     MaAlbum varchar(9) NOT NULL FOREIGN KEY REFERENCES Album(MaAlbum),
     MaBH    varchar(6) NOT NULL FOREIGN KEY REFERENCES Single(MaBH),
     PRIMARY KEY (MaAlbum, MaBH)
 );
 
--- ===================== SHOW DIỄN =====================
 CREATE TABLE Show(
     MaShow  varchar(8)    PRIMARY KEY CHECK(MaShow LIKE 'Show[0-9][0-9][0-9][0-9]'),
     TenShow nvarchar(200) NOT NULL,
@@ -80,21 +73,18 @@ CREATE TABLE Show(
     DChi    nvarchar(200)
 );
 
--- Quan hệ N-N: Show <-> CaSi
 CREATE TABLE ShowCaSi(
     MaShow varchar(8) NOT NULL FOREIGN KEY REFERENCES Show(MaShow),
     MaCS   varchar(6) NOT NULL FOREIGN KEY REFERENCES CaSi(MaCS),
     PRIMARY KEY (MaShow, MaCS)
 );
 
--- ===================== TÀI KHOẢN =====================
 INSERT INTO TaiKhoan VALUES
 ('TK001', 'admin',   '123',  'Admin', NULL),
 ('TK002', 'staff01', '123',  'Staff', '1'),
 ('TK003', 'staff02', '456',  'Staff', '0'),
 ('TK004', 'guest01',  NULL,  'Guest', NULL);
 
--- ===================== TÁC GIẢ =====================
 INSERT INTO TacGia (MaTG, TenTG, SDT, GTinh, NgSinh, DChi) VALUES
 ('TG0001', N'Nguyễn Văn An',   '0912345671', N'nam', '1985-03-12', N'Hà Nội'),
 ('TG0002', N'Trần Thị Mai',    '0987654322', N'nữ',  '1990-07-25', N'TP Hồ Chí Minh'),
@@ -105,7 +95,6 @@ INSERT INTO TacGia (MaTG, TenTG, SDT, GTinh, NgSinh, DChi) VALUES
 ('TG0007', N'Vũ Ngọc Lan',    '0945678907', N'nữ',  '1992-04-22', N'Quảng Ninh'),
 ('TG0008', N'Bùi Đức Huy',    '0967890128', N'nam', '1980-12-09', N'Nghệ An');
 
--- ===================== CA SĨ =====================
 INSERT INTO CaSi (MaCS, TenCS, GTinh, Ngsinh, SDT, DChi, Catxe) VALUES
 ('CS0001', N'Sơn Tùng M-TP',   N'nam', '1994-07-05', '0912000001', N'Thái Bình',       50000000),
 ('CS0002', N'Mỹ Tâm',          N'nữ',  '1981-01-16', '0912000002', N'Đà Nẵng',         60000000),
@@ -116,7 +105,6 @@ INSERT INTO CaSi (MaCS, TenCS, GTinh, Ngsinh, SDT, DChi, Catxe) VALUES
 ('CS0007', N'Erik',            N'nam', '1997-10-13', '0912000007', N'Hà Nội',           32000000),
 ('CS0008', N'Chi Pu',          N'nữ',  '1993-06-14', '0912000008', N'Hà Nội',           38000000);
 
--- ===================== SINGLE =====================
 INSERT INTO Single (MaBH, TenBH, MaCS, MaTG, NgPhatHanh, MaCSHT) VALUES
 ('BH0001', N'Lạc Trôi',              'CS0001', 'TG0001', '2017-01-01', NULL),
 ('BH0002', N'Chạy Ngay Đi',          'CS0001', 'TG0001', '2018-05-12', NULL),
@@ -131,14 +119,12 @@ INSERT INTO Single (MaBH, TenBH, MaCS, MaTG, NgPhatHanh, MaCSHT) VALUES
 ('BH0011', N'Túy Âm',                'CS0007', 'TG0008', '2022-11-01', NULL),
 ('BH0012', N'Đóa Hoa Hồng',          'CS0008', 'TG0005', '2023-02-14', NULL);
 
--- ===================== ALBUM =====================
 INSERT INTO Album (MaAlbum, TenAlbum, MaCS, NgPhatHanh) VALUES
 ('Album0001', N'Sky Tour',        'CS0001', '2019-07-05'),
 ('Album0002', N'Tâm 9',           'CS0002', '2020-01-16'),
 ('Album0003', N'Thế Giới Của Em', 'CS0003', '2021-10-15'),
 ('Album0004', N'Bội Bạc',         'CS0007', '2022-12-01');
 
--- ===================== ALBUM SINGLE =====================
 INSERT INTO AlbumSingle (MaAlbum, MaBH) VALUES
 ('Album0001', 'BH0001'),
 ('Album0001', 'BH0002'),
@@ -152,7 +138,6 @@ INSERT INTO AlbumSingle (MaAlbum, MaBH) VALUES
 
 
 
--- ===================== SHOW DIỄN =====================
 INSERT INTO Show (MaShow, TenShow, MaBH, NgDien, GiaVe, DChi) VALUES
 ('Show0001', N'Sky Tour Concert 2019',     'BH0001', '2019-07-20', 800000,  N'Hà Nội'),
 ('Show0002', N'Mỹ Tâm Live Show 2020',    'BH0004', '2020-03-15', 600000,  N'TP Hồ Chí Minh'),
@@ -160,7 +145,6 @@ INSERT INTO Show (MaShow, TenShow, MaBH, NgDien, GiaVe, DChi) VALUES
 ('Show0004', N'Gala Nhạc Việt 2022',       'BH0009', '2022-04-10', 400000,  N'Cần Thơ'),
 ('Show0005', N'Đêm Nhạc Trẻ 2023',        'BH0011', '2023-06-01', 350000,  N'Hà Nội');
 
--- ===================== SHOW CA SĨ =====================
 INSERT INTO ShowCaSi (MaShow, MaCS) VALUES
 ('Show0001', 'CS0001'),
 ('Show0001', 'CS0003'),

@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi9\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|c:\\users\\admin\\dth235698_nguyendominh_ltql_doan\\quanlycasi - buoi9\\quanlycasi\\forms\\frmshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|solutionrelative:quanlycasi\\forms\\frmshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|c:\\users\\admin\\dth235698_nguyendominh_ltql_doan\\quanlycasi - buoi9\\quanlycasi\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|solutionrelative:quanlycasi\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|c:\\users\\admin\\dth235698_nguyendominh_ltql_doan\\quanlycasi - buoi9\\quanlycasi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|solutionrelative:quanlycasi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi9\\quanlycasi\\forms\\frmshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{87A03598-D2AB-4547-9079-3DA0C337DED7}|QuanLyCaSi\\QuanLyCaSi.csproj|solutionrelative:quanlycasi\\forms\\frmshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi9\\QuanLyCaSi\\Program.cs",
+              "RelativeDocumentMoniker": "QuanLyCaSi\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi9\\QuanLyCaSi\\Program.cs",
+              "RelativeToolTip": "QuanLyCaSi\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T07:16:39.95Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmHOME.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi9\\QuanLyCaSi\\Forms\\frmHOME.cs",
+              "RelativeDocumentMoniker": "QuanLyCaSi\\Forms\\frmHOME.cs",
+              "ToolTip": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi9\\QuanLyCaSi\\Forms\\frmHOME.cs [Design]",
+              "RelativeToolTip": "QuanLyCaSi\\Forms\\frmHOME.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T15:10:06.675Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmSHOW.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi9\\QuanLyCaSi\\Forms\\frmSHOW.cs",
+              "RelativeDocumentMoniker": "QuanLyCaSi\\Forms\\frmSHOW.cs",
+              "ToolTip": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi9\\QuanLyCaSi\\Forms\\frmSHOW.cs",
+              "RelativeToolTip": "QuanLyCaSi\\Forms\\frmSHOW.cs",
+              "ViewState": "AgIAAJ8BAACApJmZmRktwMUBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T09:28:13.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmSHOW.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi9\\QuanLyCaSi\\Forms\\frmSHOW.cs",
+              "RelativeDocumentMoniker": "QuanLyCaSi\\Forms\\frmSHOW.cs",
+              "ToolTip": "C:\\Users\\Admin\\DTH235698_NguyenDoMinh_LTQL_DOAN\\QuanLyCaSi - Buoi9\\QuanLyCaSi\\Forms\\frmSHOW.cs [Design]",
+              "RelativeToolTip": "QuanLyCaSi\\Forms\\frmSHOW.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T09:20:02.308Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 132,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

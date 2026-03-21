@@ -20,7 +20,6 @@ namespace QuanLyCaSi.Forms
             InitializeComponent();
         }
 
-        // ===================== LOAD DỮ LIỆU =====================
         private void LoadData()
         {
             dtBH.Clear();
@@ -50,7 +49,6 @@ namespace QuanLyCaSi.Forms
             }
         }
 
-        // ===================== LOAD COMBOBOX =====================
         private void LoadComboBox()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -73,7 +71,6 @@ namespace QuanLyCaSi.Forms
                 cboCSHoTro.ValueMember   = "MaCS";
                 cboCSHoTro.SelectedIndex = -1;
 
-                // Load Tác giả
                 DataTable dtTG = new DataTable();
                 string sqlTG = "SELECT MaTG, TenTG FROM dbo.TacGia ORDER BY TenTG";
                 using (SqlDataAdapter da = new SqlDataAdapter(sqlTG, conn))
@@ -86,7 +83,6 @@ namespace QuanLyCaSi.Forms
             }
         }
 
-        // ===================== SINH MÃ TỰ ĐỘNG =====================
         private string TaoMaTuDong()
         {
             HashSet<int> danhSachMa = new HashSet<int>();
@@ -120,7 +116,6 @@ namespace QuanLyCaSi.Forms
             return "BH" + next.ToString("0000");
         }
 
-        // ===================== XÓA FORM =====================
         private void ClearForm()
         {
             txtMaBH.Text           = TaoMaTuDong();
@@ -131,7 +126,6 @@ namespace QuanLyCaSi.Forms
             cboCSHoTro.SelectedIndex = -1;
         }
 
-        // ===================== FORM LOAD =====================
         private void frmSingle_Load(object sender, EventArgs e)
         {
             dgvBaiHat.DataSource          = dtBH;
@@ -145,7 +139,6 @@ namespace QuanLyCaSi.Forms
             dgvBaiHat.CellClick += dgvBaiHat_CellClick;
         }
 
-        // ===================== THÊM =====================
         private void btnThem_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtTenBH.Text))
@@ -185,7 +178,6 @@ namespace QuanLyCaSi.Forms
             ClearForm();
         }
 
-        // ===================== SỬA =====================
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (dgvBaiHat.CurrentRow == null || dgvBaiHat.CurrentRow.Index < 0) return;
@@ -225,7 +217,6 @@ namespace QuanLyCaSi.Forms
             ClearForm();
         }
 
-        // ===================== XÓA =====================
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if (dgvBaiHat.CurrentRow == null || dgvBaiHat.CurrentRow.Index < 0) return;
@@ -243,7 +234,6 @@ namespace QuanLyCaSi.Forms
             ClearForm();
         }
 
-        // ===================== LƯU =====================
         private void btnLuu_Click(object sender, EventArgs e)
         {
             try
@@ -253,7 +243,6 @@ namespace QuanLyCaSi.Forms
                     conn.Open();
                     using (var tran = conn.BeginTransaction())
                     {
-                        // 1. XÓA
                         foreach (string maXoa in danhSachMaXoa)
                         {
                             string deleteSql = "DELETE FROM dbo.Single WHERE MaBH = @MaBH";
@@ -265,7 +254,6 @@ namespace QuanLyCaSi.Forms
                         }
                         danhSachMaXoa.Clear();
 
-                        // 2. INSERT / UPDATE
                         foreach (DataRow row in dtBH.Rows)
                         {
                             string maBH = row["MaBH"]?.ToString();
@@ -338,19 +326,16 @@ namespace QuanLyCaSi.Forms
             }
         }
 
-        // ===================== HỦY =====================
         private void btnHuy_Click(object sender, EventArgs e)
         {
             ClearForm();
         }
 
-        // ===================== THOÁT =====================
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        // ===================== CLICK DÒNG TRÊN GRID =====================
         private void dgvBaiHat_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0 || e.RowIndex >= dtBH.Rows.Count) return;

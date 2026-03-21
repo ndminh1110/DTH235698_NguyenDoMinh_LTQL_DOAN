@@ -11,7 +11,10 @@ namespace QuanLyCaSi.Forms
     {
         DataTable dtCS = new DataTable();
         
-        string connectionString = @"Data Source=.;Initial Catalog=QlCaSi;Integrated Security=True;TrustServerCertificate=True";
+        string connectionString = @"Data Source=.;
+                                    Initial Catalog=QlCaSi;
+                                    Integrated Security=True;
+                                    TrustServerCertificate=True";
 
         List<string> danhSachMaXoa = new List<string>();
         public frmSINGER()
@@ -19,7 +22,6 @@ namespace QuanLyCaSi.Forms
             InitializeComponent();
         }
 
-        // ===================== LOAD DỮ LIỆU =====================
         private void LoadData()
         {
             dtCS.Clear();
@@ -43,12 +45,10 @@ namespace QuanLyCaSi.Forms
             }
         }
 
-        // ===================== SINH MÃ TỰ ĐỘNG =====================
         private string TaoMaTuDong()
         {
             HashSet<int> danhSachMa = new HashSet<int>();
 
-            // Lấy mã từ DB
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
@@ -65,7 +65,6 @@ namespace QuanLyCaSi.Forms
                 }
             }
 
-            // Lấy mã từ dtCS (các dòng chưa lưu)
             foreach (DataRow row in dtCS.Rows)
             {
                 string ma = row["MaCS"].ToString();
@@ -73,14 +72,12 @@ namespace QuanLyCaSi.Forms
                     danhSachMa.Add(num);
             }
 
-            // Tìm số nhỏ nhất chưa dùng bắt đầu từ 1
             int next = 1;
             while (danhSachMa.Contains(next)) next++;
 
             return "CS" + next.ToString("0000");
         }
 
-        // ===================== XÓA FORM =====================
         private void ClearForm()
         {
             txtMaCS.Text = TaoMaTuDong();
@@ -92,7 +89,6 @@ namespace QuanLyCaSi.Forms
             dtpNgSinh.Value = DateTime.Now;
         }
 
-        // ===================== VALIDATE SỐ ĐIỆN THOẠI =====================
         private bool KiemTraSDT(string sdt)
         {
             if (string.IsNullOrWhiteSpace(sdt) || !sdt.StartsWith("0") || sdt.Length != 10 || !sdt.All(char.IsDigit))
@@ -106,7 +102,6 @@ namespace QuanLyCaSi.Forms
             return true;
         }
 
-        // ===================== FORM LOAD =====================
         private void frmSINGER_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = dtCS;
@@ -117,7 +112,6 @@ namespace QuanLyCaSi.Forms
             txtMaCS.Text = TaoMaTuDong();
         }
 
-        // ===================== THÊM =====================
         private void btnThem_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtTenCS.Text) && string.IsNullOrWhiteSpace(txtSDT.Text))
@@ -154,7 +148,6 @@ namespace QuanLyCaSi.Forms
             ClearForm();
         }
 
-        // ===================== SỬA =====================
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (dataGridView1.CurrentRow == null || dataGridView1.CurrentRow.Index < 0) return;
@@ -178,7 +171,6 @@ namespace QuanLyCaSi.Forms
             ClearForm();
         }
 
-        // ===================== XÓA =====================
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if (dataGridView1.CurrentRow == null || dataGridView1.CurrentRow.Index < 0) return;
@@ -189,7 +181,6 @@ namespace QuanLyCaSi.Forms
                 "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (confirm != DialogResult.Yes) return;
 
-            // Chỉ thêm vào danh sách xóa nếu mã đã tồn tại trong DB
             if (!string.IsNullOrEmpty(maXoa))
                 danhSachMaXoa.Add(maXoa);
 
@@ -197,10 +188,8 @@ namespace QuanLyCaSi.Forms
             ClearForm();
         }
 
-        // ===================== LƯU =====================
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            // Kiểm tra SDT trùng với DB (chỉ các dòng mới)
             using (SqlConnection connCheck = new SqlConnection(connectionString))
             {
                 connCheck.Open();
@@ -232,7 +221,6 @@ namespace QuanLyCaSi.Forms
                     conn.Open();
                     using (var tran = conn.BeginTransaction())
                     {
-                        // 1. XÓA các dòng đã bị xóa khỏi DataTable
                         foreach (string maXoa in danhSachMaXoa)
                         {
                             string deleteSql = "DELETE FROM dbo.CaSi WHERE MaCS = @MaCS";
@@ -244,7 +232,6 @@ namespace QuanLyCaSi.Forms
                         }
                         danhSachMaXoa.Clear();
 
-                        // 2. INSERT / UPDATE các dòng còn lại
                         foreach (DataRow row in dtCS.Rows)
                         {
                             string maCS = row["MaCS"]?.ToString();
@@ -261,7 +248,6 @@ namespace QuanLyCaSi.Forms
                                 else if (DateTime.TryParse(row["NgaySinh"].ToString(), out var parsed)) ngaySinh = parsed;
                             }
 
-                            // Thử UPDATE trước
                             string updateSql = @"UPDATE dbo.CaSi
                                                  SET TenCS  = @TenCS,
                                                      GTinh  = @GioiTinh,
@@ -283,7 +269,6 @@ namespace QuanLyCaSi.Forms
 
                                 int affected = cmd.ExecuteNonQuery();
 
-                                // Nếu UPDATE không có dòng nào → INSERT mới
                                 if (affected == 0)
                                 {
                                     string insertSql = @"INSERT INTO dbo.CaSi (MaCS, TenCS, GTinh, NgSinh, SDT, DChi, CatXe)
@@ -322,19 +307,16 @@ namespace QuanLyCaSi.Forms
             }
         }
 
-        // ===================== HỦY =====================
         private void btnHuy_Click(object sender, EventArgs e)
         {
             ClearForm();
         }
 
-        // ===================== THOÁT =====================
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        // ===================== CLICK DÒNG TRÊN GRID =====================
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
